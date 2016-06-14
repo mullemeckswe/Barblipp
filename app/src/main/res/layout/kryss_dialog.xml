@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:divider="#ffffff"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/NameTag"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:layout_gravity="center_horizontal" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#666666"
+        android:layout_margin="10dp"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins"
+        android:padding="20dp"
+        android:background="#737373"
+        android:backgroundTintMode="multiply">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Starkkryss"
+            android:id="@+id/button4"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="#ff0000"
+            android:clickable="false"
+            android:longClickable="true" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_row="1"
+            android:layout_column="2" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="SvagKryss"
+            android:id="@+id/button6"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:background="#4800ff"
+            android:clickable="false"
+            android:longClickable="true" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="MatKryss"
+            android:id="@+id/button5"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:background="#00cb39"
+            android:clickable="false"
+            android:longClickable="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Tillbaka"
+            android:id="@+id/button3"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:clickable="false"
+            android:longClickable="true" />
+
+    </GridLayout>
+</LinearLayout>
